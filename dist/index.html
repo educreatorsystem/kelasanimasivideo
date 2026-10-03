@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>From Text Book to Animation Video | Educreator</title>
+    <meta
+      name="description"
+      content="Pendaftaran bengkel guru From Text Book to Animation Video bersama Educreator."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navigasi utama">
+      <a class="brand" href="#top" aria-label="Educreator">
+        <img src="assets/educreator-logo.png" alt="Logo Educreator System" />
+        <span>Educreator</span>
+      </a>
+      <nav>
+        <a href="#belajar">Guru Pelajari</a>
+        <a href="#bayaran">Bayaran</a>
+        <a class="nav-cta" href="#daftar">Daftar</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Bengkel Online Untuk Guru</p>
+          <h1>From Text Book to Animation Video</h1>
+          <p class="hero-lead">
+            Tukar isi buku teks kepada storyboard yang kemas, kemudian hidupkan
+            idea itu menjadi video animasi menggunakan ChatGPT dan Google Flow.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#daftar">Isi Borang Pendaftaran</a>
+            <a class="button secondary" href="#bayaran">Lihat Cara Bayar</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Butiran bengkel">
+          <img src="assets/educreator-logo.png" alt="" class="hero-logo" />
+          <div class="date-tile">
+            <span>Ahad</span>
+            <strong>11 Okt 2026</strong>
+          </div>
+          <div class="mini-grid">
+            <div>
+              <span>Masa</span>
+              <strong>3.00 PM - 4.30 PM</strong>
+            </div>
+            <div>
+              <span>Platform</span>
+              <strong>Google Meet</strong>
+            </div>
+          </div>
+          <p>
+            Sesuai untuk guru yang mahu bahan PdP lebih hidup, tersusun dan
+            mudah dikembangkan menjadi video.
+          </p>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Ringkasan bengkel">
+        <span>Storyboard dari buku teks</span>
+        <span>ChatGPT untuk idea babak</span>
+        <span>Video animasi dengan Google Flow</span>
+        <span>Emel pengesahan automatik</span>
+      </section>
+
+      <section id="belajar" class="section learn-section">
+        <div class="section-heading">
+          <p class="eyebrow">Apa Guru Akan Pelajari</p>
+          <h2>Dari muka surat buku teks ke video yang bergerak.</h2>
+        </div>
+        <div class="learn-grid">
+          <article class="learn-card tilt-left">
+            <span class="step">01</span>
+            <h3>Bina Storyboard Dari Buku Teks</h3>
+            <p>
+              Pecahkan kandungan buku teks kepada scene, watak, visual, dialog
+              dan arahan animasi menggunakan ChatGPT.
+            </p>
+          </article>
+          <article class="learn-card tilt-right">
+            <span class="step">02</span>
+            <h3>Hasilkan Video Animasi</h3>
+            <p>
+              Gunakan storyboard sebagai prompt tersusun untuk menghasilkan
+              video animasi melalui Google Flow.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="bayaran" class="section payment-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Langkah Sebelum Daftar</p>
+          <h2>Buat bayaran, kemudian muat naik resit.</h2>
+        </div>
+        <div class="payment-layout">
+          <div class="payment-info">
+            <div class="account-box">
+              <span>No Akaun Maybank</span>
+              <button id="copyAccount" type="button" aria-label="Salin nombor akaun">
+                501114422550
+              </button>
+              <small>Tekan nombor untuk salin.</small>
+            </div>
+            <ol class="steps-list">
+              <li>Buat bayaran ke akaun Maybank atau imbas QR.</li>
+              <li>Simpan resit bayaran dalam format gambar atau PDF.</li>
+              <li>Isi borang pendaftaran dan muat naik resit.</li>
+              <li>Semak emel pengesahan di Inbox dan Spam.</li>
+            </ol>
+          </div>
+          <figure class="qr-card">
+            <img src="assets/qr-maybank.jpg" alt="QR code bayaran Maybank" />
+            <figcaption>QR bayaran Maybank</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="daftar" class="section form-section">
+        <div class="section-heading">
+          <p class="eyebrow">Pendaftaran Peserta</p>
+          <h2>Isi maklumat guru selepas bayaran dibuat.</h2>
+        </div>
+
+        <form class="registration-form" id="registrationForm">
+          <div class="field">
+            <label for="fullName">Nama Penuh <span>Huruf besar</span></label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="CONTOH: NUR AINA BINTI AHMAD"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="schoolName">Nama Sekolah</label>
+            <input
+              id="schoolName"
+              name="schoolName"
+              type="text"
+              placeholder="Contoh: SK Seri Murni"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">Emel</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nama@email.com"
+              required
+            />
+          </div>
+
+          <div class="field file-field">
+            <label for="receipt">Muat Naik Resit</label>
+            <input
+              id="receipt"
+              name="receipt"
+              type="file"
+              accept="image/*,.pdf"
+              required
+            />
+            <p>Format diterima: gambar atau PDF. Saiz disarankan bawah 8MB.</p>
+          </div>
+
+          <button class="button primary submit-button" id="submitButton" type="submit">
+            Hantar Pendaftaran
+          </button>
+          <p class="form-note">
+            Selepas borang dihantar, emel pengesahan akan dihantar ke emel yang
+            didaftarkan bersama maklumat bengkel dan pautan Telegram.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/educreator-logo.png" alt="" />
+      <div>
+        <strong>Educreator System</strong>
+        <p>Teach · Build · Sell · Empower</p>
+      </div>
+    </footer>
+
+    <dialog id="successDialog" class="success-dialog">
+      <div class="dialog-content">
+        <button id="closeDialog" class="close-dialog" type="button" aria-label="Tutup">
+          &times;
+        </button>
+        <p class="eyebrow">Status Penghantaran</p>
+        <h2>Pendaftaran berjaya dihantar.</h2>
+        <p>
+          Sila semak emel pengesahan dalam Inbox dan Spam. Maklumat bengkel
+          serta pautan Telegram akan dihantar ke emel yang didaftarkan.
+        </p>
+        <a class="button secondary" href="https://t.me/+bR0TCJJoEgNkYmQ1" target="_blank" rel="noreferrer">
+          Buka Group Telegram
+        </a>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
