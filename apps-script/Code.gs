@@ -7,6 +7,7 @@ const WORKSHOP = {
   date: "11 Oktober 2026 (Ahad)",
   time: "3.00 PM - 4.30 PM",
   platform: "Google Meet",
+  fee: "RM 40",
 };
 
 function doGet() {
@@ -44,6 +45,7 @@ function doPost(e) {
       WORKSHOP.date,
       WORKSHOP.time,
       WORKSHOP.platform,
+      WORKSHOP.fee,
       TELEGRAM_LINK,
       data.sourcePage || "",
     ]);
@@ -86,6 +88,7 @@ function getRegistrationSheet_() {
       "Tarikh",
       "Masa",
       "Platform",
+      "Amaun Bayaran",
       "Telegram",
       "Source Page",
     ]);
@@ -131,6 +134,8 @@ function sendConfirmationEmail_(participant) {
     WORKSHOP.time +
     "\nPlatform: " +
     WORKSHOP.platform +
+    "\nAmaun Bayaran: " +
+    WORKSHOP.fee +
     "\nNama Sekolah: " +
     participant.schoolName +
     "\n\n" +
@@ -151,6 +156,7 @@ function sendConfirmationEmail_(participant) {
     row_("Tarikh", WORKSHOP.date) +
     row_("Masa", WORKSHOP.time) +
     row_("Platform", WORKSHOP.platform) +
+    row_("Amaun Bayaran", WORKSHOP.fee) +
     row_("Nama Sekolah", participant.schoolName) +
     "</table>" +
     '<p><strong>Group Telegram:</strong><br><a href="' +

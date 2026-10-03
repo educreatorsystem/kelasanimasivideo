@@ -6,6 +6,7 @@ const WORKSHOP_TITLE = "From Text Book to Animation Video";
 const WORKSHOP_DATE = "11 Oktober 2026 (Ahad)";
 const WORKSHOP_TIME = "3.00 PM - 4.30 PM";
 const WORKSHOP_PLATFORM = "Google Meet";
+const WORKSHOP_FEE = "RM 40";
 
 const form = document.querySelector("#registrationForm");
 const submitButton = document.querySelector("#submitButton");
@@ -85,6 +86,7 @@ form.addEventListener("submit", async (event) => {
       workshopDate: WORKSHOP_DATE,
       workshopTime: WORKSHOP_TIME,
       workshopPlatform: WORKSHOP_PLATFORM,
+      workshopFee: WORKSHOP_FEE,
       telegramLink: TELEGRAM_LINK,
       sourcePage: window.location.href,
     });
